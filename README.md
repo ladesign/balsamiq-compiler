@@ -28,7 +28,7 @@
 - 將 `.bmpr` 專案匯出為單一 JSON 頁面，此檔案後續可以提交給「Balsamiq 原型多工轉換器」轉成多個 HTML 頁面。
 
 
-## 架構
+## 架構：Balsamiq 專案所有mockups編譯為獨立的 HTML 頁面
 
 ```text
 BMPR (SQLite)
@@ -37,7 +37,18 @@ SQLite Parser (compiler.js)
   ↓
 Renderer Engine (renderers/)
   ↓
-HTML (dist/)
+HTML (./dist/)
+```
+## 架構：Balsamiq 專案匯出包括所有mockups的單一 JSON 頁面 
+
+```text
+BMPR (SQLite)
+  ↓
+SQLite Parser (exporter.js)
+  ↓
+Renderer Engine (renderers/)
+  ↓
+HTML (./allpage.json)
 ```
 
 ## 安裝
@@ -72,7 +83,7 @@ npm run start
 - **BrowserWindow**: 瀏覽器外框
 - **Icon**: 圖示 (FontAwesome 6)
 
-## 執行：將 Balsamiq 專案匯出為 allpage.json 
+## 執行：將 Balsamiq 專案匯出包括所有mockups的單一 JSON 頁面 
 
 1. 將 Balsamiq 專案的 `.bmpr` 檔案複製到專案根目錄，並重新命名為 `project.bmpr`。
 2. 執行匯出指令：
