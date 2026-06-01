@@ -1,0 +1,18 @@
+{
+  "name": "balsamiq-compiler",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node compiler.js",
+    "export": "node exporter.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "better-sqlite3": "^12.10.0",
+    "ejs": "^6.0.1",
+    "fs-extra": "^11.3.5"
+  }
+}

@@ -1,0 +1,38 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+package-lock.json
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# production
+/build
+/dist
+allpage.json
+
+# misc
+.DS_Store
+
+# next.js
+/.next/
+/out/
+
+# AI cloud development tools 
+.vercel
+
+# Project File(Balsamiq Project .bmpr files)
+project.bmpr
+
+# Agent CLI
+.antigravitycli
+.aider*
+.gemini
+
+# Document
+/doc
+
+# testing
+*測試*.*
+*test*.*
