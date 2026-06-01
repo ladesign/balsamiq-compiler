@@ -66,5 +66,5 @@ npm run export
 ---
 
 ## agy cli 的創建過程會話棧存區：
-C:\Users\\[用戶名稱]\\.gemini\antigravity-cli\brain\ca31269c-6307-47ef-98d6-f962341abf21
+C:\Users\\[用戶名稱]\\.gemini\antigravity-cli\brain\\[session字串]
 
