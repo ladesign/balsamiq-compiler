@@ -48,7 +48,7 @@ SQLite Parser (exporter.js)
   ↓
 Renderer Engine (renderers/)
   ↓
-HTML (./allpage.json)
+JSON (./allpage.json)
 ```
 
 ## 安裝
