@@ -1,6 +1,8 @@
 # Balsamiq Compiler
 
-將 `.bmpr` 專案直接轉成 HTML 頁面。
+- 將 `.bmpr` 專案直接轉成 HTML 頁面。
+- 將 `.bmpr` 專案匯出為單一 JSON 頁面，此檔案後續可以提交給「Balsamiq 原型多工轉換器」轉成多個 HTML 頁面。
+
 
 ## 架構
 
@@ -20,19 +22,19 @@ HTML (dist/)
 npm install
 ```
 
-## 執行
+## 執行：將 Balsamiq 專案編譯為 HTML 頁面
 
 1. 將 Balsamiq 專案的 `.bmpr` 檔案複製到專案根目錄，並重新命名為 `project.bmpr`。
 2. 執行編譯指令：
 
 ```bash
-npm start
+npm run start
 ```
 
 ## 輸出
 
 ```text
-/dist
+./dist
   首頁儀錶板.html
   login.html
   ...
@@ -46,9 +48,23 @@ npm start
 - **BrowserWindow**: 瀏覽器外框
 - **Icon**: 圖示 (FontAwesome 6)
 
+## 執行：將 Balsamiq 專案匯出為 allpage.json 
+
+1. 將 Balsamiq 專案的 `.bmpr` 檔案複製到專案根目錄，並重新命名為 `project.bmpr`。
+2. 執行匯出指令：
+
+```bash
+npm run export
+```
+
+## 輸出
+
+```text
+./allpage.json
+```
 
 ---
 
 ## agy cli 的創建過程會話棧存區：
-C:\Users\user\.gemini\antigravity-cli\brain\ca31269c-6307-47ef-98d6-f962341abf21
+C:\Users\\[用戶名稱]\\.gemini\antigravity-cli\brain\ca31269c-6307-47ef-98d6-f962341abf21
 
